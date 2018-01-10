@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lue.movementdynamics.HomeController">
+   <stylesheets>
+        <URL value="@/styles/home.css" />
+    </stylesheets>
+    <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="139.0" prefWidth="600.0" style="-fx-background-color: #6d6767; -fx-border-color: #db061f;" BorderPane.alignment="CENTER">
+               <children>
+                  <TreeView fx:id="treeView" layoutY="157.0" onMouseClicked="#handleTreeClicked" prefHeight="441.0" prefWidth="1365.0" />
+                  <Label fx:id="help" layoutX="1168.0" layoutY="16.0" text="Help" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="logout" layoutX="1229.0" layoutY="16.0" onMouseClicked="#Logout" text="Logout" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="80.0" prefHeight="77.0" prefWidth="1363.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label fx:id="module" alignment="CENTER" layoutX="162.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Module" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="order" alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Order" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="home" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Home" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="50.0" text="Licence Type: Professional Licence ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="1316.0" layoutY="132.0" text="2.9">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="256.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="31.0" prefWidth="1325.0" style="-fx-background-color: #d6d6c2;" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <Pane prefHeight="92.0" prefWidth="1325.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="downloadBtn" layoutX="45.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#downloadSelectedVideo" style="-fx-background-color: #ffffff; -fx-border-radius: 8px; -fx-border-color: #8f9091;" text="Download">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="continueBtn" layoutX="144.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#ContinueBtn" style="-fx-background-color: #ffffff; -fx-border-radius: 8px; -fx-border-color: #8f9091;" text="Continue">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <ProgressBar fx:id="progressBar" layoutX="44.0" layoutY="52.0" prefWidth="200.0" progress="0.0" />
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

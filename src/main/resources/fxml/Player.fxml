@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lue.movementdynamics.PlayerController">
+   <stylesheets>
+        <URL value="@/styles/player.css" />
+    </stylesheets>
+    <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="139.0" prefWidth="600.0" style="-fx-background-color: #6d6767; -fx-border-color: #db061f;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutY="80.0" prefHeight="610.0" prefWidth="1362.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <WebView fx:id="webView" layoutX="-7.0" layoutY="49.0" prefHeight="300.0" prefWidth="1362.0" />
+                        <TreeView fx:id="treeView" layoutX="1.0" layoutY="419.0" onMouseClicked="#handleTreeClicked" prefHeight="181.0" prefWidth="316.0" />
+                        <ScrollPane fx:id="scrollPane" layoutX="317.0" layoutY="401.0" prefHeight="200.0" prefWidth="1045.0">
+                           <content>
+                              <FlowPane fx:id="flowPane" prefHeight="200.0" prefWidth="1031.0" />
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="video" alignment="CENTER" layoutX="235.0" layoutY="14.0" onMouseClicked="#getVideo" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #db061f;" text="DownLoaded Videos" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="module" alignment="CENTER" layoutX="161.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Module" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="order" alignment="CENTER" layoutX="87.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Order" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="home" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #db061f; -fx-background-radius: 6px;" text="Home" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <FlowPane fx:id="flowPane1" layoutY="350.0" prefHeight="51.0" prefWidth="1362.0" style="-fx-background-color: #ffffff;" />
+                        <Label layoutX="1.0" layoutY="402.0" prefHeight="17.0" prefWidth="316.0" style="-fx-background-color: #6d6767;" text="  Videos Title" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Label fx:id="help" layoutX="1168.0" layoutY="16.0" text="Help" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="logout" layoutX="1229.0" layoutY="16.0" onMouseClicked="#Logout" text="Logout" textFill="WHITE" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="73.0" fitWidth="256.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="31.0" prefWidth="1325.0" style="-fx-background-color: #d6d6c2;" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
